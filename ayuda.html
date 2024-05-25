@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   <div class="container">
+      <!-- Content navbar -->
+
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="index.html">Tienda JS</a>
+          
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="categorias.html">categorias</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  cuenta
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Inciar sesión</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#registro">registrarse</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="ayuda.html">Ayuda</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="contactos.html">contactos</a>
+              </li>
+
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="Buscar" placeholder="Buscar aqui" aria-label="Buscar aqui">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            
+          </div>
+        </div>
+    </nav>
+
+    <!-- Content navbar -->
+
+           <!-- Content modal -->
+          <!-- Content Iniciar sesión -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+  
+                  <!-- Form -->
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <!-- Form -->
+  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Ingresar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Iniciar sesión -->
+
+          <!-- Content Registrarse -->
+          <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarse</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+  
+                  <!-- Form -->
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Tipo de Documento</label>
+
+                    <!-- Content check -->
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">C.C</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">T.I</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                      <label class="form-check-label" for="inlineCheckbox3">P.E.P</label>
+                    </div>
+                  </div>
+                  <!-- Content check -->
+
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Numero de Documento</label>
+                    <input type="number" class="form-control">
+                  </div>
+                  <div class="row">
+                    <div class="mb-3 col col-6 col-md-6">
+                      <label for="exampleInputEmail1" class="form-label">Nombres</label>
+                      <input type="text" class="form-control" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3 col col-6 col-md-6">
+                      <label for="exampleInputPassword1" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Celular</label>
+                    <input type="tel" class="form-control">
+                  </div><div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" aria-describedby="emailHelp">
+                  </div>
+                  <!-- Form -->
+  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Registrarse</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contente Registrarse-->
+        
+      
+        <!-- Content modal -->
+
+        <!-- Ayuda -->
+
+        <h2 class="text-center py-4">Ayuda</h2>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ¿Cómo registrarme?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <h6 class="text-center py-5">Para registrarse a la tienda virtual Tienda JS, lo primero que hay que hacer es ir a la parte superior de la pagina donde dice "cuenta"</h6>
+                <img src="img/img1.png" width="900px" class="rounded mx-auto d-block">
+                <h6 class="text-center py-5 ">Dar click en registrarse</h6>
+                <img src="img/img2.png" width="900px" class="rounded mx-auto d-block">
+                <h6 class="text-center py-5">Llenar el formulario con sus datos</h6>
+                <img src="img/img3.png" width="900px" class="rounded mx-auto d-block">
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                 ¿Cómo iniciar sesión?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <h6 class="text-center py-5">Para iniciar sesión a la tienda virtual Tienda JS, lo primero que hay que hacer es ir a la parte superior de la pagina donde dice "cuenta"</h6>
+                <img src="img/img1.png" width="900px" class="rounded mx-auto d-block">
+                <h6 class="text-center py-5">Dar click en iniciar sesión</h6>
+                <img src="img/img4.png" width="900px" class="rounded mx-auto d-block">
+                <h6 class="text-center py-5">Llenar el formulario con sus datos</h6>
+                <img src="img/img5.png" width="900px" class="rounded mx-auto d-block">
+              </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Contacto
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="py-5" style="max-width: 500px;" >
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="img/whatsapp.png" class="img-fluid rounded-start" alt="..." width="100px">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Cualquier inquietud escribenos</h5>
+                      <p class="card-text text-center">+57 3208678414</p>
+                   </div>
+                  </div>
+                </div>
+                <div class="py-5" style="max-width: 500px;" >
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="img/gmail (1).png" class="img-fluid rounded-start" width="200px">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title text-center" >servicioalcliente@gmail.com</h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Ayuda -->
+        <br>
+        
+        <footer class="bg-dark text-light text-center py-4">
+            <p>Diseñado por Analisis y Desarrollo de software Ficha No. 2670687</p>
+            <p>&copy; 2024 Tienda JS</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
